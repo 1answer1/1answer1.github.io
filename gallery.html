@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="icon" href="img/bigs.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e0f7fa, #80deea); 
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
+        header {
+            background: #007c80; 
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .gallery-title {
+            display: inline-block; 
+            padding: 20px 40px; 
+            border: 3px solid #007c80; 
+            border-radius: 8px; 
+            background-color: white; 
+            color: black; 
+            font-size: 36px; 
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center; 
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white; 
+            font-size: 16px; 
+            padding: 5px 10px; 
+            background-color: #007c80; 
+            border-radius: 5px; 
+            transition: background-color 0.3s ease; 
+        }
+        nav a:hover {
+            background-color: #005f60; 
+        }
+        .container {
+            flex: 1; 
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+        .gallery-group {
+            margin-bottom: 20px; 
+        }
+        .gallery {
+            display: flex; 
+            justify-content: center; 
+            gap: 20px; 
+        }
+        .gallery img {
+            width: 300px; 
+            height: auto; 
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .caption {
+            font-size: 24px;
+            color: #007c80;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007c80; 
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="gallery-title">Галерея</h1>
+</header>
+
+<nav>
+    <a href="index.html">Главное меню</a>
+    <a href="resume.html">Резюме</a>
+    <a href="hobby.html">Хобби</a>
+</nav>
+
+<div class="container">
+    <div class="gallery-group">
+        <div class="caption">Моя Жизнь</div>
+        <div class="gallery">
+            <img src="img/g1.jpg" alt="Фото 1(закибербулили?)">
+            <img src="img/g2.jpg" alt="Фото 2(закибербулили?)">
+            <img src="img/g3.jpg" alt="Фото 3(закибербулили?)">
+        </div>
+    </div>
+
+    <div class="gallery-group">
+        <div class="caption">Времяпровождение</div>
+        <div class="gallery">
+            <img src="img/gym.jpg" alt="Фото 4(закибербулили?)">
+            <img src="img/v2.jpg" alt="Фото 5(закибербулили?)">
+            <img src="img/v3.jpg" alt="Фото 6(закибербулили?)">
+        </div>
+    </div>
+
+    <div class="gallery-group">
+        <div class="caption">Родной город Нея</div>
+        <div class="gallery">
+            <img src="img/r1.jpg" alt="Фото 7(закибербулили?)">
+            <img src="img/r2.webp" alt="Фото 8(закибербулили?)">
+        </div>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2025 Сидоров Егор Алексеевич</p>
+</footer>
+
+</body>
+</html>
