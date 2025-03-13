@@ -48,7 +48,7 @@
         nav a:hover {
             background-color: #005f60; 
         }
-        .container {
+        main {
             flex: 1; 
             width: 80%;
             margin: auto;
@@ -63,7 +63,7 @@
             color: #007c80;
             text-align: center; 
         }
-        .gallery-group {
+        section {
             margin-bottom: 20px; 
         }
         .highlight {
@@ -78,13 +78,16 @@
             justify-content: center; 
             flex-wrap: wrap; 
         }
+        figure {
+            margin: 10px;
+            text-align: center;
+        }
         img {
             width: 100%; 
             max-width: 300px; 
             height: auto; 
             border-radius: 8px; 
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
-            margin: 10px; 
         }
         footer {
             text-align: center;
@@ -106,35 +109,51 @@
     <a href="hobby.html">Хобби</a>
 </nav>
 
-<div class="container">
+<main>
     <h2>Моя Галерея</h2>
     
-    <div class="gallery-group">
-        <div class="highlight">Моя жизнь</div>
-        <div class="image-container">
-            <img src="img/g1.jpg" alt="Фото 1(закибербулили?)">
-            <img src="img/g2.jpg" alt="Фото 2(закибербулили?)">
-            <img src="img/g3.jpg" alt="Фото 3(закибербулили?)">
-        </div>
-    </div>
+    <section>
+        <h3 class="highlight">Чтение книг</h3>
+        <section class="image-container">
+            <figure>
+                <img src="img/g1.jpg" alt="Фото 1(закибербулили?)">
+            </figure>
+            <figure>
+                <img src="img/g2.jpg" alt="Фото 2(закибербулили?)">
+            </figure>
+            <figure>
+                <img src="img/g3.jpg" alt="Фото 3(закибербулили?)">
+            </figure>
+        </section>
+    </section>
 
-    <div class="gallery-group">
-        <div class="highlight">Спорт</div>
-        <div class="image-container">
-            <img src="img/gym.jpg" alt="Фото 4(закибербулили?)">
-            <img src="img/v2.jpg" alt="Фото 5(закибербулили?)">
-            <img src="img/v3.jpg" alt="Фото 6(закибербулили?)">
-        </div>
-    </div>
+    <section>
+        <h3 class="highlight">Спорт</h3>
+        <section class="image-container">
+            <figure>
+                <img src="img/gym.jpg" alt="Фото 4(закибербулили?)">
+            </figure>
+            <figure>
+                <img src="img/v2.jpg" alt="Фото 5(закибербулили?)">
+            </figure>
+            <figure>
+                <img src="img/v3.jpg" alt="Фото 6(закибербулили?)">
+            </figure>
+        </section>
+    </section>
 
-    <div class="gallery-group">
-        <div class="highlight">Родной город Нея</div>
-        <div class="image-container">
-            <img src="img/r1.jpg" alt="Фото 7(закибербулили?)">
-            <img src="img/r2.webp" alt="Фото 8(закибербулили?)">
-        </div>
-    </div>
-</div>
+    <section>
+        <h3 class="highlight">Родной город Нея</h3>
+        <section class="image-container">
+            <figure>
+                <img src="img/r1.jpg" alt="Фото 7(закибербулили?)">
+            </figure>
+            <figure>
+                <img src="img/r2.webp" alt="Фото 8(закибербулили?)">
+            </figure>
+        </section>
+    </section>
+</main>
 
 <footer>
     <p>&copy; 2025 Сидоров Егор Алексеевич</p>
